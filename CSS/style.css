@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap');
+
+
+
+/*
+
+font-family: 'Open Sans', sans-serif; (Headings, Call-to-actions, Header Navigation)
+
+font-family: 'Raleway', sans-serif; (Body)
+
+*/
+
+:root{
+    /* primary */
+    --clr-Very-Dark-Blue: #070439;
+    --clr-Desaturated-Blue: #585989;
+
+    /* Accent */
+    --clr-Bright-Blue: #3065f8;
+    --clr-Moderate-Cyan: #3c9f8f;
+
+    /* Neutral */
+    --clr-Light-Grayish-Blue: #f6f6fe;
+    --clr-Light-Gray: #bfbfbf;
+
+    /* fonts */
+    --font-open-sans: 'Open Sans', sans-serif;
+    --font-Raleway: 'Raleway', sans-serif;
+}
