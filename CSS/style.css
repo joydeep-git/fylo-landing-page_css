@@ -34,3 +34,134 @@ ul{
 a{
     text-decoration: none;
 }
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header li{
+    display: inline;
+    padding: 1rem;
+}
+header .container img{
+    padding: 3rem;
+    margin-left: 1rem;
+}
+header .container ul{
+    margin-right: 5rem;
+    padding-left: 3rem;
+    font-family: var(--font-open-sans);
+}
+header li a{
+    color: var(--clr-Very-Dark-Blue);
+}
+
+header .top-part{
+    display: flex;
+    flex-direction: row;
+    padding: 4rem;
+}
+.top-right{
+    margin-left: 0;
+    padding-left: 0;
+}
+.top-right img{
+    width: 100%;
+}
+.top-left h1{
+    font-size: 2.8rem;
+    font-family: var(--font-Raleway);
+    line-height: 4rem;
+    color: var(--clr-Very-Dark-Blue);
+    margin-top: 3rem;
+    font-style: normal;
+}
+.top-left p{
+    font-family: var(--font-open-sans);
+    font-size: 1.2rem;
+}
+.top-left form{
+    margin: 1.5rem 0 1rem 0;
+}
+.top-left form input{
+    padding: 0.8rem;
+    font-family: var(--font-open-sans);
+    width: 42%;
+    border: 1px solid;
+    border-radius: 3px;
+}
+.top-left form button{
+    background-color: var(--clr-Bright-Blue);
+    color: var(--clr-Light-Grayish-Blue);
+    margin-left: 1rem;
+    border-radius: 3px;
+    font-family: var(--font-Raleway);
+    font-weight: 600;
+    padding: 0.85rem 4rem;
+    text-align: center;
+    border: none;
+    box-shadow: 0px 0px 3px var(--clr-Very-Dark-Blue);
+    font-size: 0.9rem;
+}
+.top-left form button:hover{
+    opacity: 0.65;
+    cursor: pointer;
+}
+
+.middle-part{
+    margin-top: 6rem;
+    padding: 4rem;
+    background-image: url(/images/bg-curve-desktop.svg);
+    background-repeat: no-repeat;
+    background-position-x: -280rem;
+    background-size: 800%;
+    display: flex;
+    opacity: 1;
+}
+.middle-top{
+    padding-top: 7rem;
+}
+
+.mid-1 h2{
+    font-size: 2.5rem;
+    font-family: var(--font-Raleway);
+    font-weight: 700;
+    color: var(--clr-Very-Dark-Blue);
+}
+.mid-1 p{
+    font-family: var(--font-open-sans);
+    font-weight: 400;
+}
+.mid-1 a{
+    color: var(--clr-Moderate-Cyan);
+    border-bottom: 1px solid ;
+    padding-bottom: 0.3rem;
+}
+
+.mid-2{
+    padding: 30px 40px;
+    margin: 5rem 1rem 1rem 1rem;
+    background-color: #fff;
+    opacity: 1;
+    border-radius: 10px;
+    box-shadow: 0px 0px px var(--clr-Very-Dark-Blue);
+    border:none;
+    outline: none;
+    width: 50%;
+}
+
+
+
+
+
+
+.mid-img{
+    width: 70%;
+}
+
+
+.mid-img img{
+    height: 18rem;
+    width: auto;
+}
