@@ -66,9 +66,6 @@ header .top-part{
     margin-left: 0;
     padding-left: 0;
 }
-.top-right img{
-    width: 100%;
-}
 .top-left h1{
     font-size: 2.8rem;
     font-family: var(--font-Raleway);
@@ -109,6 +106,9 @@ header .top-part{
 .top-left form button:hover{
     opacity: 0.65;
     cursor: pointer;
+}
+.top-right img{
+    width: 100%;
 }
 
 .middle-part{
@@ -241,7 +241,7 @@ header .top-part{
     display: flex;
     text-align: left;
     padding: 1rem 2rem 1rem 2rem;
-    width: 200%;
+    width: 100%;
     border-radius: 5px;
     margin-bottom: 1rem;
     border: outset solid var(--clr-Desaturated-Blue);
@@ -275,9 +275,9 @@ footer{
     padding: 8rem 6rem 6rem 5rem;
 }
 
-footer:hover{
+/* footer:hover{
     height: 9.25rem;
-}
+} */
 footer a, li{
     color: var(--clr-Light-Grayish-Blue);
 }
@@ -287,9 +287,13 @@ footer a, li{
     margin-left: 0;
     padding-left: 0;
 }
-.footer_left img:hover{
+.logo_bottom{
+    width: 10rem;
+    height: 3rem;
+}
+.logo_bottom:hover{
     width: 11rem;
-    height: auto;
+    height: 3rem;
 }
 
 .footer_left-1{
@@ -333,13 +337,12 @@ footer a, li{
 
 
 @media screen and (max-width: 768px)
-{
-
-    header {
-        padding: 0;
-        margin: 0;
-    }
-    header .container{
+{   
+        body{
+            padding: 0;
+            margin: 0;
+        }
+    .container{
         display: flex;
         justify-content: space-between;
         padding: 0;
@@ -350,28 +353,233 @@ footer a, li{
         padding: 1.5rem;
         margin: 0;
     }
-    header ul{
-        margin: 0;
+    header .container ul{
         padding: 0;
-        align-items: center;
-    }
-    header li{
         margin: 0;
-        padding: 1rem;
-        display: inline;
     }
-    .top-part{
+    /* header part completed */
+
+
+
+    header .top-part{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    header .top-left{
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        padding: 0;
         margin: 0;
+    }
+    header .top-left h1{
+        padding: 0;
+        margin: 0;
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+    header .top-left p{
+        margin-top: 2rem;
+        padding: 2.5rem;
+        text-align: center;
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+    header .top-left form{
+        display: flex;
+        justify-content: space-around;
+        gap: 1.5rem;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    header .top-left form input{
+        padding: 1rem 1rem;
+        margin: 0;
+        display: grid;
+        width: 80%;
+        place-self: center;
+    }
+    header .top-left form button{
+        margin-right: 0;
+        margin-left: 0;
+        width: 85%;
+        display: grid;
+        place-self: center;
+        font-size: 1.5rem;
+
+    }
+    .top-right img{
+        width: 100%;
+    }
+    /* top part completed */
+
+
+    /* main part start */
+    main{
+        padding: 0;
+        margin: 0;
+    }
+    main section{
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .mid-img{
+        width: 100%;
+    }
+    .mid-img img{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .middle-part{
+        background-image: url(/images/bg-curve-mobile.svg);
+        background-size:cover;
+        background-repeat: no-repeat;
         padding: 0;
     }
+    .middle-top{
+        padding: 0;
+        margin: 0;
+    }
+    .mid-1{
+        padding: 3rem;
+    }
+    .mid-1 h2{
+        font-size: 1.5rem;
+        margin: 4rem 0rem;
+    }
+    .mid-1 p{
+        padding: 0;
+        margin: 2rem 0px;
+        font-size: 1.2rem;
+        text-align: left;
+        color: var(--clr-Desaturated-Blue);
+        line-height: 1.5rem;
+        
+    }
+    .mid-1 p br{
+        display: none;
+    }
+
+    .mid-2{
+        display: grid;
+        padding: 1.5rem;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 5rem;
+        margin-top: 1rem;
+        width: 60%;
+
+    }
+    .mid-2 p br{
+        display: none;
+    }
+    .mid-2_1 p{
+        padding: 0.2rem;
+        margin: 0;
+        text-align: left;
+        font-weight: 700;
+        color: var(--clr-Desaturated-Blue);
+        line-height: 1.5rem;
+        font-family: var(--font-open-sans);
+    }
+    .mid-2_2 img{
+        height: 2rem;
+    }
+    .mid-2_3{
+        text-align: left;
+    }
+
+
+    .middle_bottom{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+
+    .middle_bottom-left{
+        padding: 1rem 3.5rem;
+        font-size: 1.2rem;
+        line-height: 1.7rem;
+        margin: 0;
+        text-align: center;
+        color: var(--clr-Light-Gray);
+    }
+    .middle_bottom-left br{
+        display: none;
+    }
+    .middle_bottom-left h2{
+        margin: 1rem 0px;
+        color: var(--clr-Light-Grayish-Blue);
+    }
+
+    .middle_bottom-right{
+        display: flex;
+        padding: 2rem;
+        margin: 0;
+        width: fit-content;
+        margin: auto;
+    }
+    .middle_bottom-right form{
+        display: grid;
+        padding: 0;
+        margin: 0;
+        place-content: center;
+        place-items: center;
+    }
+    .middle_bottom-right form input{
+        display: flex;
+        padding: 1rem 3rem;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        text-align: center;
+    }
+    .middle_bottom-right form button{
+        width:100%;
+    }
+
+     /* middle part completed */
 
 
 
 
+    /* footer part start */
 
-
-
-
-
+    footer{
+        display: flex;
+        padding: 2rem;
+        margin: 0;
+        flex-direction: column;
+    }
+    .footer_left{
+        padding: 2rem;
+        margin: 0;
+    }
+    .footer_mid{
+        display: flex;
+        flex-direction: column;
+        font-family: var(--font-open-sans);
+        color: var(--clr-Light-Gray);
+    }
+    .social-media{
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        flex-direction: row;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .social-media a{
+        margin: 0.4rem;
+    }
 
 }
